@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap" rel="stylesheet">
+    
+
+    <style>
+        h1 {
+                font-family: 'Azeret Mono';
+            }
+            .menu {
+                display: none;
+            }
+            .menu___visible {
+                display: initial;
+            }
+    </style>
+
+
+</head>
+<body>
+    <header class="my-header">
+        <h1>HALO Games</h1>
+    </header>
+    <aside>
+        <ul>
+            <li id="boton">Bungie
+                <ul id="menu" class="menu">
+                    <li>Halo CE</li>
+                    <li>Halo 2</li>
+                    <li>Halo 3</li>
+                    <li>Halo 3 ODST</li>
+                    <li>Halo Reach</li>
+                </ul>
+            </li>
+            <li id="boton2">343 Iindustries
+                <ul id="menu2" class="menu">
+                    <li>Halo 4</li>
+                    <li>Halo 5</li>
+                    <li>Halo Wars 2</li>
+                </ul>
+            </li>
+            <li id="boton3">Ensemble Studios
+                <ul id="menu3" class="menu">
+                    <li>Halo Wars</li>
+                </ul>
+            </li>
+            <li id="boton4">Vanguard Games
+                <ul id="menu4" class="menu">
+                    <li>Halo: Spartan Assault</li>
+                    <li>Halo: Spartan Strike</li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+
+    <script type="text/javascript">
+        const menu = document.querySelector('#menu');
+        const boton = document.querySelector('#boton');
+
+        const menu2 = document.querySelector('#menu2');
+        const boton2 = document.querySelector('#boton2');
+
+        const menu3 = document.querySelector('#menu3');
+        const boton3 = document.querySelector('#boton3');
+
+        const menu4 = document.querySelector('#menu4');
+        const boton4 = document.querySelector('#boton4');
+
+        boton.addEventListener('click', function(){
+            menu.classList.toggle('menu___visible');
+        })
+
+        boton2.addEventListener('click', function(){
+            menu2.classList.toggle('menu___visible');
+        })
+
+        boton3.addEventListener('click', function(){
+            menu3.classList.toggle('menu___visible');
+        })
+
+        boton4.addEventListener('click', function(){
+            menu4.classList.toggle('menu___visible');
+        })
+    </script>
+</body>
+</html>
